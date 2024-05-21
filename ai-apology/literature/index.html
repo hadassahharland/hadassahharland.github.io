@@ -7,11 +7,13 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <meta http-equiv="refresh" content="5; url=https://ai-apology.notion.site/" />
+
     <!-- Define title -->
     <title>AI Apology Literature</title>
 
     <!-- Include favicon. Use, e.g., https://favicon.io/ -->
-    <!-- <link rel="icon" type="image/png" href="favicon.png" sizes="32x32" /> -->
+    <link rel="icon" type="image/png" href="favicon.png" sizes="32x32" />
 
     <!-- Include style sheets -->
     <link rel="stylesheet" href="main.css" />
@@ -49,17 +51,34 @@
         <!-- I am a Ph.D. student in human-aligned AI at Deakin University. -->
       <!-- </p> -->
       <p>
-       This page will be redirected to the Notion database
-      </p>
+       This page will be redirected to the Notion database in <span id="countdowntimer">5 </span> seconds. 
+       </p>
+
+       <script type="text/javascript">
+        var timeleft = 5;
+        var downloadTimer = setInterval(function(){
+        timeleft--;
+        document.getElementById("countdowntimer").textContent = timeleft;
+        if(timeleft <= 0)
+            clearInterval(downloadTimer);
+        },1000);
+      </script>
+
+       <p>
+        Click here to direct instantly: <a href="https://ai-apology.notion.site/" title="Notion Database">https://ai-apology.notion.site/</i></a>
+       </p>
       <!-- <p> -->
         <!-- Hang tight! -->
       <!-- </p> -->
 
       <!-- Icons -->
-      <ul class="icons">
-        <li>
-          <a href="https://https://ai-apology.notion.site/" title="Notion Database"><i class="fas fa-database"></i></a>
-        </li>
+      <!-- <ul class="icons"> -->
+        <!-- <li> -->
+          <!-- <p> -->
+            <!--  -->
+          <!-- </p> -->
+          <!--  -->
+        <!-- </li> -->
         <!-- <li> -->
           <!-- <a href="mailto:h.harland@research.deakin.edu.au" title="E-Mail"><i class="fas fa-envelope"></i></a> -->
         <!-- </li> -->
@@ -75,7 +94,7 @@
         <!-- <li> -->
           <!-- <a href="https://scholar.google.co.uk/citations?user=ZKxTJxQAAAAJ" title="Google Scholar"><i class="ai ai-google-scholar"></i></a> -->
         <!-- </li> -->
-      </ul>
+      <!-- </ul> -->
     </section>
   </body>
  
