@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <!-- <meta http-equiv="x-ua-compatible" content="ie=edge" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Define title -->
+    <title>AI Apology Literature via Notion</title>
+
+    <style>
+        body, html {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          margin: auto;
+          padding: 0;
+        }
+        .iframe-container {
+          display: flex;
+          width: 100%;
+          height: 100%;
+          flex-direction: column;
+        }
+        .iframe-container iframe {
+          flex-grow: 1;
+          border: none;
+          margin: 0;
+          padding: 0;
+        }
+      </style>
+</head>
+
+<body>
+
+    <div id="fallback-text">
+        <!-- This content will display if the iframe fails to load -->
+        In case of failure to load, select the following link to access the page directly: <a href="https://ai-apology.notion.site/" title="Notion Database">https://ai-apology.notion.site/</a>
+    </div>
+
+    <div class="iframe-container">
+        <iframe src="https://v2-embednotion.com/eb1ea6375531477598c2fe78c38c46e6" style="width: 100%; height: 100%; border: none; border-radius: 10px; padding: none;" title="Embedded iframe view of Notion Database"></iframe>
+        <!-- <iframe src="https://ai-apology.notion.site/AI-Apology-Literature-eb1ea6375531477598c2fe78c38c46e6" style="width: 100%; height: 100%; border: 2px solid #ccc; border-radius: 10px; padding: none;" title="Embedded iframe view of Notion Database"></iframe> -->
+    </div>
+
+    <script>
+        const fallbackText = document.querySelector('#fallback-text');
+        const iframe = document.querySelector('iframe');
+
+        // default display as none
+        function fallback(state)  {fallbackText.style.display = state;}
+
+        iframe.addEventListener('load', function()  {
+            fallback('none');
+        });
+        
+    </script> 
+
+</body>
+
+</html>
